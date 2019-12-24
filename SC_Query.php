@@ -34,8 +34,8 @@ class SC_Query
 			die();
 		}
 
-		$this->conn->query("SET time_zone = '+9:00'");
-		$this->conn->query('SET NAMES utf8');
+		self::$instance->query("SET time_zone = '+9:00'");
+		self::$instance->query('SET NAMES utf8');
 
 	}
 
