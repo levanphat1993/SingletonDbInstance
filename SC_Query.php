@@ -33,7 +33,6 @@ class SC_Query
 			echo 'Connection failed:' . $e->getMessage();
 			die();
 		}
-
 		self::$instance->query("SET time_zone = '+9:00'");
 		self::$instance->query('SET NAMES utf8');
 
